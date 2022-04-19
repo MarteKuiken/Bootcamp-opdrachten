@@ -91,7 +91,16 @@ foreach ($kunststroming as $key => $val) {
     </ul>
 <hr>
 <?php
-//voorbeeld
+function checkVote($age)
+{
+$name = "Tomi";
+if ($age >=18) {
+    echo $name . ", je bent oud genoeg om te stemmen.";
+} else {
+    echo $name . ", je bent niet oud genoeg om te stemmen.";
+}
+}
+checkVote(17)
 ?>
 <hr>
 </body>
