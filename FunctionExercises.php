@@ -28,8 +28,8 @@ function checkPrime($n)
     }
   return 1;
    }
-$a=checkPrime(8);
-if($a==0)
+$a = checkPrime(8);
+if($a == 0)
 echo "This is not a Prime Number. <br>";
 else
 echo "This is a Prime Number. <br>";
@@ -44,7 +44,7 @@ echo "This is a Prime Number. <br>";
 function reverseString($string){
     return strrev ($string);
 }
-$string="Het is vandaag mooi weer.";
+$string = "Het is vandaag mooi weer.";
 echo reverseString($string);
 ?>
 
@@ -70,8 +70,11 @@ $string = "blahBlahblah";
 <hr>
 
 <?php
-$kunststromingen=[Renaissance, Barok, Neoclassicisme, Realisme, Impressionisme];
-sort($kunststromingen);
+$kunststroming = ["Renaissance", "Barok", "Neoclassicisme", "Realisme", "Impressionisme"];
+sort($kunststroming);
+foreach ($kunststroming as $key => $val) {
+    echo "kunststroming[" . $key . "] = " . $val . "<br>";
+}
 ?>
 
 <hr>
