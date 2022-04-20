@@ -137,12 +137,9 @@ echo "$temp_array[$i], ";
         "Emmen" => 35
     ]
 ];
-
 foreach ($weeklyTemps as $dag => $info) {
-    echo 'De hoogste temperatuur op ' . $dag . ' was ';
     $stad = array_search(max($info) , $info);
-    echo $info[$stad] . ' graden in ' . $stad . '.<br>'; 
+    echo 'De hoogste temperatuur op ' . $dag . ' was ' . $info[$stad] . ' graden in ' . $stad . '.<br>'; 
 }
-
 ?>  
 <hr>
