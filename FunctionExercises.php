@@ -70,10 +70,13 @@ $string = "blahBlahblah";
 <hr>
 
 <?php
-$kunststroming = ["Renaissance", "Barok", "Neoclassicisme", "Realisme", "Impressionisme"];
+$kunststroming = ["Renaissance", "Impressionisme", "Pointillisme"];
 sort($kunststroming);
-foreach ($kunststroming as $key => $val) {
-    echo "kunststroming[" . $key . "] = " . $val . "<br>";
+
+$klength = count($kunststroming);
+for($x = 0; $x < $klength; $x++) {
+  echo $kunststroming[$x];
+  echo "<br>";
 }
 ?>
 
